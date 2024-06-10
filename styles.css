@@ -47,65 +47,58 @@ nav ul li .login-btn {
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+   
     cursor: pointer;
     font-size: 16px;
 }
 
-.main {
+.hero {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 50px 20px;
+    justify-content: left;
+    padding: 200px;
     background-color: #F9F9F9;
+    background-image: url("bg/bg-1.jpg");
+    background-size: cover;
 }
 
-.main-text {
-    max-width: 600px;
+.hero-text {
+    max-width: 500px;
+   
 }
 
-.main-text h1 {
-    font-size: 3em;
+.hero-text h1 {
+    font-size: 50px;
     color: #4E2E2F;
 }
 
-.main-text p {
-    font-size: 1.2em;
+.hero-text p {
+    font-size: 10px;
     color: #7A7A7A;
     margin-bottom: 20px;
+    padding-top: 20px;
 }
 
-.main-buttons button {
+.hero-buttons button {
     background-color: #A82C4B;
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
     margin-right: 10px;
 }
 
-.main-buttons button:hover {
+.hero-buttons button:hover {
     background-color:  #43121d;
 }
-.main-buttons2 button {
-    background-color: #ffffff;
-    color: rgb(1, 0, 0);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    margin-right: 10px;
-  display: flex;
+
+
+.hero-buttons button:hover {
+    background-color: #000;
 }
 
-.main-buttons button:hover {
-    background-color: #A82C4B;
-}
-
-.main-image img {
+.hero-image img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
@@ -114,7 +107,7 @@ nav ul li .login-btn {
 .stats {
     display: flex;
     justify-content: space-around;
-    padding: 50px 20px;
+    padding: 30px 10px;
     background-color: #A82C4B;
     color: white;
 }
@@ -133,30 +126,34 @@ nav ul li .login-btn {
 }
 
 .highlight, .handmade, .quote, .explore-foods, .subscribe {
-    padding: 50px 20px;
+    padding: 30px 20px;
     text-align: center;
+    margin-top: 70px;
+   
 }
 
 .highlight {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row-reverse;
+
 }
 
 .highlight-text {
-    max-width: 600px;
+    max-width: 500px;
     text-align: left;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 .highlight-text h2 {
     color: #4E2E2F;
-    font-size: 2em;
+    font-size: 50px;
 }
 
 .highlight-text p {
     color: #7A7A7A;
-    font-size: 1.2em;
+    font-size: 25px;
     margin-bottom: 20px;
 }
 
@@ -165,20 +162,26 @@ nav ul li .login-btn {
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
+    margin-top: 40px;
+}
+.highlight-text button:hover{
+    background-color: #000;
+    color:#fff;
 }
 
 .highlight-image img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     border-radius: 10px;
+    
 }
 
 .handmade h2, .quote h2, .explore-foods h2, .subscribe h2 {
     font-size: 2em;
     color: #4E2E2F;
+    margin-left: 100px;
 }
 
 .handmade p, .quote p, .explore-foods p, .subscribe p {
@@ -186,15 +189,23 @@ nav ul li .login-btn {
     font-size: 1.2em;
     margin-bottom: 20px;
     margin-left: 10px;
+    text-align: left;
+    margin-bottom: 10px;
+    
 }
-
+.price{
+    text-decoration: line-through;
+    color: #999;
+}
 .handmade{
-    background-image: url(./img/img-2.png);
+    background-image: url("./img/img-2.png");
     height: 100vh;
     background-size: 600px;
     background-position: right;
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
+    text-align:left;
 }
+
 .handmade-images2{
     display: flex;
     background: cover;
@@ -212,28 +223,32 @@ nav ul li .login-btn {
     text-align: left;
     max-width: 600px;
     margin: 0 auto 20px;
+    padding-left: -100px;
 }
 
 .handmade ul li {
     color: #4E2E2F;
     margin-bottom: 10px;
     position: relative;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
     
 }
 
 .handmade ul li:before {
-    content: '•';
+    
     color: #8A2B2B;
     position: absolute;
     left: 0;
+   
+}
+.list{
+    list-style: none;
 }
 
 .handmade button, .quote button, .subscribe button {
     background-color: #A82C4B;
-    color: white;
+    color: #eae2e4 !important;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -242,7 +257,7 @@ nav ul li .login-btn {
 }
 
 .handmade button:hover, .quote button:hover, .subscribe button:hover {
-    background-color: #732525;
+    background-color: #000;
 }
 
 .food-items {
@@ -258,6 +273,10 @@ nav ul li .login-btn {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     max-width: 300px;
     margin-bottom: 20px;
+ 
+}
+.col{
+    color: #A82C4B;
 }
 
 .food-item img {
@@ -271,6 +290,7 @@ nav ul li .login-btn {
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 .subscribe-form input {
@@ -312,5 +332,5 @@ footer .social-media img {
 #hand{
     background: url(./bg/bg-2.jpg);
     height: 100vh;
-   
+    size:;
 }
